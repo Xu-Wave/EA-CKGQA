@@ -1,0 +1,5 @@
+bert-base-serving-start \
+    -model_dir /NER_Model/ner的模型目录 \
+    -bert_model_dir /chinese_L-12_H-768_A-12 \
+    -model_pb_dir /NER_Model/model_pb_dir \
+    -mode NER

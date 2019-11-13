@@ -1,0 +1,10 @@
+通过NER和实体消歧获得的准确实体
+抽取该实体下的所有子图
+并从子图中抽取所有待选属性
+并比较待选属性列表与关键词列表的余弦相似度
+从而从待选属性中找到最终的准确属性。
+
+z_inget.py用于提取实体所对应的全部属性并存放到get_type.txt中
+entity_keywords_chou.py用于根据词性筛选出关键词列表
+start_bert_vector脚本用于开启Bert服务对候选属性列表和关键词列表向量化
+cos_sim_and_delete_get_type.py用于计算余弦相似度以及清空get_type.txt文件
